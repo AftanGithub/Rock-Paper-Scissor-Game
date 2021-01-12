@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Potta+One&display=swap');
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Lato, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffef00;
+  font-family: 'Nunito', sans-serif;
+}
+
+.game-container{
+  box-shadow: 0px 10px 30px #383838;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.header {
+  background: #242526;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  border-bottom: 5px solid rgb(129, 129, 129);
+}
+
+h1 {
+  color: white;
+  font-size: 25px;
+  font-family: 'Potta One', cursive;
+}
+
+.player-container {
+  margin: 50px;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+.far {
+  font-size: 50px;
+  margin-right: 40px;
+  User-select: none;
+}
+
+.far:hover, .reset-icon:hover :not(.computer-icon){
+  cursor: pointer;
+  color: rgb(0, 119, 238);
+}
+
+.computer-icon:hover{
+  cursor: pointer;
+  color: red;
+}
+
+
+
+.reset-icon {
+  font-size: 30px;
+  cursor: pointer;
+  margin-left: 30px;
+}
+
+.reset-icon:hover{
+  cursor: pointer;
+  color: rgb(3, 207, 64);
+}
+
+
+
+.result-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.result-text {
+  font-size: 40px;
+  margin: unset;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  border-top: 2px solid #d6d6d6;
+  width: 100%;
+  text-align: center;
+}
+
+.selected {
+  color: dodgerblue;
+}
+
+.selected2{
+  color: red;
+}
+
+
+.player-container h2{
+  margin-left: -1.3rem;
+}
+
+.player-container #playerScore,#playerChoice{
+  color: #0066ff;
+}
+
+.player-container #computerScore,#computerChoice{
+  color: red;
+}
+
+/* Media Query: Large Smartphone (Vertical) */
+@media screen and (max-width: 600px) {
+  .game-container {
+
+    height: 580px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .player-container {
+    margin: 50px 0 25px 25px;
+  }
+
+  .far {
+    margin-right: 20px;
+  }
+
+  .reset-icon {
+    margin-top: 25px;
+    margin-left: 25px;
+  }
+}
+
+
+#git-icon{
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+}
+
+#git-icon:hover{
+  transform: rotate(360deg);
+  transition: 1s ease-in;
+}
+
+
+/* Media Query: iPhone (Vertical) */
+@media screen and (max-width: 376px) {
+  .game-container {
+    height: 550px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  .player-container {
+    margin: 43px 0 25px 20px;
+  }
+
+  .far {
+    font-size: 43px;
+  }
+
+  .reset-icon {
+    margin-top: 15px;
+  }
+
+  .result-container {
+    margin: 0 20px;
+  }
+}
