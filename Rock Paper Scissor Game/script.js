@@ -1,5 +1,5 @@
 import {startConfetti,stopConfetti,removeConfetti} from './confetti.js-master/confetti.js';
-
+//player data
 const playerScoreEl = document.getElementById('playerScore');
 const playerChoiceEl = document.getElementById('playerChoice');
 const computerScoreEl = document.getElementById('computerScore');
