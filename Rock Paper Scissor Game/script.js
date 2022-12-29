@@ -3,7 +3,7 @@ import {startConfetti,stopConfetti,removeConfetti} from './confetti.js-master/co
 const playerScoreEl = document.getElementById('playerScore');
 const playerChoiceEl = document.getElementById('playerChoice');
 const computerScoreEl = document.getElementById('computerScore');
-const computerChoiceEl = document.getElementById('computerChoice');
+const computerChoiceEl = document.getElementById('computerChoice')
 
 
 const resultTextEl = document.getElementById('resultText');
